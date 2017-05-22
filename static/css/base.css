@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+/*!
+ * @名称：base.css
+ * @功能：重设浏览器默认样式
+ */
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html {
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+i,
+a,
+span,
+input,
+p,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+  border: 0;
+  box-sizing: border-box;
+  font-style: normal;
+}
+i:before {
+  font-size: 100%;
+}
+/* 要注意表单元素并不继承父级 font 的问题 */
+body,
+button,
+input
+{
+  font-family: inherit;
+  outline:none;
+}
+
+/* 去掉 table cell 的边距并让其边重合 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ie bug：th 不继承 text-align */
+th {
+  text-align: inherit;
+}
+/* 去除默认边框 */
+fieldset,
+img {
+  border: none;
+}
+
+/* 去掉列表前的标识，li 会继承 */
+ol,
+ul {
+  list-style: none;
+}
+
+/*让标题都自定义，适应多个系统应用 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 500;
+}
+
+/* 让链接在 hover 状态下不显示下划线 */
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* 清除浮动 */
+.clear {
+  clear: both!important;
+  display: block;
+  font-size: 0;
+  height: 0!important;
+  line-height: 0;
+  overflow: hidden;
+  width: 0!important;
+  float: none!important;
+}
+
+/* 设置浮动，减少浮动带来的 bug */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+
