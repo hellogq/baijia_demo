@@ -1,15 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import Hello from '@/components/Hello'
+import Select from '@/components/Select'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'Header',
-    //   component: head
-    // }
+    {
+      path: '/',
+      component: Select
+    },
+    {
+      path: '/select',
+      component: Select
+    }
   ]
 })
